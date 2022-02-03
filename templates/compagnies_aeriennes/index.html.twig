@@ -1,0 +1,157 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello CompagniesAeriennesController!{% endblock %}
+
+{% block body %}
+
+<div class="example-wrapper">
+    <div class="text-center">
+        {{data}}
+    </div>
+</div>
+
+<div class= "container-fluid">
+         <h4>{{blog['Fil_Ariane']}}</h4>
+         <div class= "row d-inline-flex">
+            <!-- Gallery Item 1 -->
+            <div class ="col-6 col-sm-4 col-md-3 p-2">
+               <div class="card h-100">
+                  <p class="card-text">
+                        {{blog['Bloc_prix'][0]['Depart']}} - <strong>{{blog['Bloc_prix'][0]['Arriver']}}</strong><br>
+                        Aller {{blog['Bloc_prix'][0]['Aller']}}
+                        Retour {{blog['Bloc_prix'][0]['Retour']}}<br>
+                        <h4>{{blog['Bloc_prix'][0]['Prix']}} *</h4>
+                        Réservé le {{blog['Bloc_prix'][0]['Date_de_reservation']}}
+                  </p>
+                  
+               </div>
+            </div>
+            <div class ="col-6 col-sm-4 col-md-3 p-2">
+               <div class="card h-100">
+                  
+                  <p class="card-text">
+                        {{blog['Bloc_prix'][1]['Depart']}} - <strong>{{blog['Bloc_prix'][1]['Arriver']}}</strong><br>
+                        Aller {{blog['Bloc_prix'][1]['Aller']}}
+                        Retour {{blog['Bloc_prix'][1]['Retour']}}<br>
+                        <h4>{{blog['Bloc_prix'][1]['Prix']}} *</h4>
+                        Réservé le {{blog['Bloc_prix'][1]['Date_de_reservation']}}
+                  </p>
+               </div>
+            </div>
+            
+            <div class ="col-6 col-sm-4 col-md-3 p-2">
+               <div class="card h-100">
+                  <p class="card-text">
+                        {{blog['Bloc_prix'][2]['Depart']}} - <strong>{{blog['Bloc_prix'][2]['Arriver']}}</strong><br>
+                        Aller {{blog['Bloc_prix'][2]['Aller']}}
+                        Retour {{blog['Bloc_prix'][2]['Retour']}}<br>
+                        <h4>{{blog['Bloc_prix'][2]['Prix']}} *</h4>
+                        Réservé le {{blog['Bloc_prix'][2]['Date_de_reservation']}}
+                  </p>
+               </div>
+            </div>
+            
+            <div class ="col-6 col-sm-4 col-md-3 p-2">
+               <div class="card h-100">
+                 <p class="card-text">
+                        {{blog['Bloc_prix'][3]['Depart']}} - <strong>{{blog['Bloc_prix'][3]['Arriver']}}</strong><br>
+                        Aller {{blog['Bloc_prix'][3]['Aller']}}
+                        Retour {{blog['Bloc_prix'][3]['Retour']}}<br>
+                        <h4>{{blog['Bloc_prix'][3]['Prix']}} *</h4>
+                        Réservé le {{blog['Bloc_prix'][3]['Date_de_reservation']}}
+                  </p>
+               </div>
+            </div>
+            
+            <div class ="col-6 col-sm-4 col-md-3 p-2">
+               <div class="card h-100">
+                  <p class="card-text">
+                        {{blog['Bloc_prix'][4]['Depart']}} - <strong>{{blog['Bloc_prix'][4]['Arriver']}}</strong><br>
+                        Aller {{blog['Bloc_prix'][4]['Aller']}}
+                        Retour {{blog['Bloc_prix'][4]['Retour']}}<br>
+                        <h4>{{blog['Bloc_prix'][4]['Prix']}} *</h4>
+                        Réservé le {{blog['Bloc_prix'][4]['Date_de_reservation']}}
+                  </p>
+               </div>
+            </div>
+            
+            <div class ="col-6 col-sm-4 col-md-3 p-2">
+               <div class="card h-100">
+                  <p class="card-text">
+                        {{blog['Bloc_prix'][5]['Depart']}} - <strong>{{blog['Bloc_prix'][5]['Arriver']}}</strong><br>
+                        Aller {{blog['Bloc_prix'][5]['Aller']}}
+                        Retour {{blog['Bloc_prix'][5]['Retour']}}<br>
+                        <h4>{{blog['Bloc_prix'][5]['Prix']}} *</h4>
+                        Réservé le {{blog['Bloc_prix'][5]['Date_de_reservation']}}
+                  </p>
+               </div>
+            </div>
+            <div class ="col-6 col-sm-4 col-md-3 p-2">
+               <div class="card h-100">
+                  <p class="card-text">
+                        {{blog['Bloc_prix'][6]['Depart']}} - <strong>{{blog['Bloc_prix'][6]['Arriver']}}</strong><br>
+                        Aller {{blog['Bloc_prix'][6]['Aller']}}
+                        Retour {{blog['Bloc_prix'][6]['Retour']}}<br>
+                        <h4>{{blog['Bloc_prix'][6]['Prix']}} *</h4>
+                        Réservé le {{blog['Bloc_prix'][6]['Date_de_reservation']}}
+                  </p>
+               </div>
+            </div>
+            <div class ="col-6 col-sm-4 col-md-3 p-2">
+               <div class="card h-100">
+                  <p class="card-text">
+                        {{blog['Bloc_prix'][7]['Depart']}} - <strong>{{blog['Bloc_prix'][7]['Arriver']}}</strong><br>
+                        Aller {{blog['Bloc_prix'][7]['Aller']}}
+                        Retour {{blog['Bloc_prix'][7]['Retour']}}<br>
+                        <h4>{{blog['Bloc_prix'][7]['Prix']}} *</h4>
+                        Réservé le {{blog['Bloc_prix'][7]['Date_de_reservation']}}
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+
+</div>
+
+
+<section class="">
+<div class="card  shadow" >
+   <h4 class="title">DÉCOUVRIR LA COMPAGNIE AÉRIENNE AIR FRANCE</h4>
+
+   <h3>Présentation générale et histoire</h3>
+   <p>Compagnie aujourd'hui: {{blog['Decouverte_Compagnie']['first_paragraph']}}</p>
+   <p>Compagnie hier:{{blog['Decouverte_Compagnie']['second_paragraph']}}</p>
+   <h3>Services à Bord</h3>
+   <p>{{blog['Decouverte_Compagnie']['third_paragraph']}}</p>
+   <h3>Programme de fidélité</h3>
+   <p>{{blog['Decouverte_Compagnie']['fourth_paragraph']}}</p>
+
+</div>
+
+<div class="card ">
+<p>{{blog['Vols']['title']}}</p>
+<p>Au départ de</p>{{blog['Vols']['ville_depart']}}
+<p>Départ le </p>{{blog['Vols']['Depart']}}
+<p>Retour le</p>{{blog['Vols']['Retour']}}
+<p>A partir de</p><h3>{{blog['Vols']['Prix']}} *TTC</h3>
+
+</div>
+
+<div class="card ">
+<p>{{blog['Fil_Ariane']}}</p>
+<p>Code IATA :{{blog['fiche_identite']['Code_IATA']}}</p>
+<p>Code OACI : {{blog['fiche_identite']['Code_OACI']}}</p>
+<p>Nom de la compagnie :{{blog['fiche_identite']['Compagnie']}}</p>
+<p>Pays d'origine :{{blog['fiche_identite']['Pays_Origine']}} </h3>
+<div>
+   <p>Adresse:{{blog['fiche_identite']['Adresse']}} </p>
+   <p>Telephone :{{blog['fiche_identite']['Tel']}} </p>
+   <p>Fax :{{blog['fiche_identite']['Fax']}}</p>
+  <p>Site Web:<a>{{blog['fiche_identite']['Site']}} </a></p>
+</div>
+
+
+</div>
+
+</section>
+{% endblock %}

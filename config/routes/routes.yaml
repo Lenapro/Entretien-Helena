@@ -1,0 +1,14 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+Compagnies:
+
+      path: /compagnies-aeriennes/airfrance
+      controller: App\Controller\CompagniesAeriennesController::airfrance
+
+
+Aeriennes:
+
+    path: /compagnies-aeriennes/easyjet
+    controller: App\Controller\CompagniesAeriennesController::easyjet
